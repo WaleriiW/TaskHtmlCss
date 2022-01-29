@@ -3,9 +3,8 @@ body{
  	padding: 0;
 	margin: 0;
 	background-color: #d9d2e9;
-
 }
-	 
+
 div{
 	box-sizing: border-box;
 }
@@ -14,19 +13,16 @@ header{
 	background-color: #1aecff; no-repeat center top / cover;
 	height: 100px;
 	margin: 0 0;
-    padding: 0;
-    
-   position: flex;
-    
+        padding: 0;
+        position: flex;
 }
-
 	
 .logo{
 	margin-right: 100px;
-    float: left;  
-    width:100px;
-    height:100px;
-    padding-left: 200px;
+        float: left;  
+        width:100px;
+        height:100px;
+        padding-left: 200px;
 }
 nav{
 	float: right;
@@ -35,8 +31,7 @@ nav{
 dws-menu {
 	margin: 0;
 	padding: 0;
-	
-    width: 100px;
+	width: 100px;
 }
 
 .dws-menu li{
@@ -52,7 +47,7 @@ dws-menu {
 }
 .dws-menu > ul li a{
      display: block;
-     background: red;
+     background: #eeeeee;
      padding: 20px 20px 20px 20px;
      font-size: 20px;
      color: green;
