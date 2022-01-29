@@ -1,62 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+body{
+	font-family: Arial, sans-serif;
+ 	padding: 0;
+	margin: 0;
+	background-color: #d9d2e9;
 
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/main.css"> 
-    <title>Task HTML, CSS</title>
- </head>
- <body>
-    <header>
-     <div class="container">
-              <img src="img/logo.png" class="logo" alt="logo">     
-       <nav>
-        <ul class="dws-menu"> 
-              <li><p><img src="img/ic.png" alt="masedge"></p> </li>
-              <li><a href="#" class="button">VL</a>
-                <ul>
-                     <li><a href="#">Name</a></li>
-                     <li><a href="#">Profile</a></li>
-                     <li><a href="#">Log Out</a></li>
-                </ul>
-              </li>
-        </ul>
-       </nav>
-       </div>
-    </header>
+}
+	 
+div{
+	box-sizing: border-box;
+}
+
+header{
+	background-color: #1aecff; no-repeat center top / cover;
+	height: 100px;
+	margin: 0 0;
+    padding: 0;
+    
+   position: flex;
+    
+}
+
+	
+.logo{
+	margin-right: 100px;
+    float: left;  
+    width:100px;
+    height:100px;
+    padding-left: 200px;
+}
+nav{
+	float: right;
+}
+
+dws-menu {
+	margin: 0;
+	padding: 0;
+	
+    width: 100px;
+}
+
+.dws-menu li{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.dws-menu > ul{
+    display: block;
+    justify-content: left;
+    width: 100px;
+}
+.dws-menu > ul li a{
+     display: block;
+     background: red;
+     padding: 20px 20px 20px 20px;
+     font-size: 20px;
+     color: green;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+
+.dws-menu li p{
+    display: block; position: relative; 
+}
+
+.dws-menu li p:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5);  opacity: 0; }
+
+.dws-menu li p:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; }
+
+.dws-menu li p:hover:before,
+.dws-menu li p:hover:after { opacity: 1; }
+
+.button{
+  color: white; /* цвет текста */
+  border: 1px; 
  
-    <section>
-        <div class="abaut">    
-           <img src="img/404.png" alt="Error 404"> 
-           <a href="#">404 "Something went wrong"</a>      
-        </div>
-   </section>  
+  border-radius: 50% 1px;
+  transition: 0.2s;
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(184,135,231); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+.button:hover { background: rgb(180,167,214); } /* при наведении курсора мышки */
+.button:active { background: rgb(217,210,233); } /* при нажатии */
 
-<footer>
+section{
+    margin: 0;
+    padding: 0;
+    height: 900px;
+   
+    text-decoration: none;
+	text-transform: uppercase;
+    
+}   
+.abaut{
+    margin-left: auto;
+    margin-right: auto;
 
-    <div class="note">
-         <div class="alert">
-         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-           <strong>Error</strong>
-           <p>Something went wrong.</p>
-           <p>Please try again later.</p>
-         </div>
-       
-
-
-
-
-         <div class="alert1">
-         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-           <strong>Success</strong>
-           <p>Profile was update.</p>
-         </div>
-
+    width: 6em
+}
+.abaut a{
+        position: center;
+        }
 
 
+footer{
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 300px;
+    height: 300px; 
+    text-decoration: none;
+	text-transform: uppercase;
+}
+
+ 
+.alert {
+	margin: 0 0;
+	border-radius: 8px;
+	width: 300px;
+    padding: 10px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 5px;
+}
 
 
-
-    </div>   
- </footer>  
- </body>
-</html>
+.alert1 {
+	border-radius: 8px;
+	width: 300px;
+    padding: 10px;
+    background-color: green; /* green */
+    color: white;
+    margin-bottom: 5px;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
