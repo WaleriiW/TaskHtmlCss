@@ -3,8 +3,9 @@ body{
  	padding: 0;
 	margin: 0;
 	background-color: #d9d2e9;
-}
 
+}
+	 
 div{
 	box-sizing: border-box;
 }
@@ -13,16 +14,19 @@ header{
 	background-color: #1aecff; no-repeat center top / cover;
 	height: 100px;
 	margin: 0 0;
-        padding: 0;
-        position: flex;
+    padding: 0;
+    
+   position: flex;
+    
 }
+
 	
 .logo{
 	margin-right: 100px;
-        float: left;  
-        width:100px;
-        height:100px;
-        padding-left: 200px;
+    float: left;  
+    width:100px;
+    height:100px;
+    padding-left: 200px;
 }
 nav{
 	float: right;
@@ -31,7 +35,8 @@ nav{
 dws-menu {
 	margin: 0;
 	padding: 0;
-	width: 100px;
+	
+    width: 100px;
 }
 
 .dws-menu li{
@@ -45,10 +50,10 @@ dws-menu {
     justify-content: left;
     width: 100px;
 }
-.dws-menu > ul li a{
+.dws-menu  ul li {
      display: block;
      background: #eeeeee;
-     padding: 20px 20px 20px 20px;
+     padding: 10px 10px 10px 10px;
      font-size: 20px;
      color: green;
      text-decoration: none;
@@ -64,7 +69,7 @@ dws-menu {
 .dws-menu li p:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; }
 
 .dws-menu li p:hover:before,
-.dws-menu li p:hover:after { opacity: 1; }
+.dws-menu li p:over:after { opacity: 1; }
 
 .button{
   color: white; /* цвет текста */
@@ -90,13 +95,13 @@ section{
 	text-transform: uppercase;
     
 }   
-.abaut{
+.about{
     margin-left: auto;
     margin-right: auto;
 
     width: 6em
 }
-.abaut a{
+.about a{
         position: center;
         }
 
@@ -141,4 +146,5 @@ footer{
     cursor: pointer;
     transition: 0.3s;
 }
+ 
  
